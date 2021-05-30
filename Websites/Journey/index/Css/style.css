@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Telugu Sangam MN" , sans-serif;
+}
+/*header part  texts and navigation*/
+header,
+.navbar {
+    background-color: #2C329E;
+}
+.main button {
+    color: #EB9771;
+    border: 1px solid #EB9771;
+    margin-bottom: 7rem;
+}
+.main button:hover {
+    background-color: white;
+    color: #EB9771;
+    border: 1px solid white ;
+}
+
+.main2 h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.main2 span {
+    color: #EB9771;
+}
+.main2 p {
+    color: white;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin: 1rem 0 2rem 0;
+}
+ul li a {
+    font-weight: 600;
+    margin-right:30px  ;
+    position: relative;
+}
+ul li a::before {
+    position: absolute;
+    content: "";
+    left: 8px;
+    width: 80%;
+    height: 2px;
+    background-color: #ffffff;
+    bottom: -2px;
+    transform: scaleX(0);
+    transition: 0.4s transform;
+    transform-origin: right ;
+}
+ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+label #btn,
+label #cancel {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    font-size: 25px;
+    transform: translate(0, -50%);
+    display: none;
+}
+#check {
+    display: none;
+}
+
+@media (max-width: 770px) {
+    label #btn {
+        display: inline-block;
+    }
+    .container nav ul {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 30%;
+        height: 100vh;
+        padding-top: 80px;
+        display: block;
+        line-height: 30px;
+        z-index: 100;
+        background-color:#EB9771 ;
+        transition: 0.3s;
+    }
+    .container nav ul li {
+        margin-left: 10px;
+    }
+    #check:checked ~ ul {
+        right: 0;
+    }
+    #check:checked ~ label #btn {
+        display: none;
+    }
+    #check:checked ~ label #cancel {
+        display: block;
+        z-index: 101;
+    }
+}
+
+/*This is main body part*/
+.pics {
+    margin-top: -40px;
+}
+.pics .col-4 img {
+    height: 390px;
+    width: 325px;
+    margin-bottom: 1rem;
+}
+
+.transfer img:hover {
+
+}
+
+
+
+/*section 2 quitation */
+#back2 {
+    background-color: #EB9771;
+    margin-top: -4rem;
+
+}
+.col-10  blockquote,.ao {
+    text-align: center;
+    font-size: 22px;
+    font-family: "Al Tarikh",sans-serif ;
+    color: white;
+
+}
+.ao {
+    color: #6166b8;
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+.qmark {
+    font-family: cursive,sans-serif;
+    font-size: 80px;
+    margin-bottom: 0;
+    text-align: center;
+    color: #6166b8;
+    margin-top: 5rem;
+}
+
+
+/*Section 3 about me */
+
+.col-lg-8 h3 {
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    color: rgba(4,4,4,0.76);
+}
+.col-lg-8 .about {
+ color: #767676;
+    line-height: 20px;
+}
+.col-lg-8 div {
+    margin-bottom: 2rem;
+}
+/*Footer part*/
+
+#footbg {
+    background-color: #5b60c4;
+}
+.col-lg-8 h1 {
+    color: #ff8346;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.col-lg-8 .ft {
+    color: #f3f3f3;
+}
+.col-lg-8 .lg {
+    color: #ff8346;
+    font-weight: bold;
+}
+.col-lg-8 button {
+    color: #ffffff;
+    border: 1px solid #EB9771;
+    margin-bottom: 2rem;
+    background-color:#EB9771 ;
+}
+.col-lg-8 button:hover {
+    background-color: white;
+    color: #EB9771;
+    border: 1px solid white;
+}
+footer .last {
+    background-color: #303672;
+    text-align: center;
+    color: #e7e7e7;
+    padding: 0.75rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
